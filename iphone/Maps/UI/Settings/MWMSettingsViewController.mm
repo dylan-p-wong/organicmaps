@@ -207,6 +207,8 @@ using namespace power_management;
   NSString *ttsEnabledString = [MWMTextToSpeech isTTSEnabled] ? L(@"on") : L(@"off");
   [self.voiceInstructionsCell configWithTitle:L(@"pref_tts_enable_title") info:ttsEnabledString];
   [self.drivingOptionsCell configWithTitle:L(@"driving_options_title") info:@""];
+
+  [self.tableView reloadData];
 }
 
 
