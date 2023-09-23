@@ -128,4 +128,8 @@ private:
   Callback m_callback;
   bool m_withMisprints = false;
 };
+
+// D-A-CH countries has special street suffixes processing.
+std::map<strings::UniString, strings::UniString> const & GetDACHStreets();
+
 }  // namespace search
